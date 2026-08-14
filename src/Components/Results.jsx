@@ -1,7 +1,6 @@
-import React from "react";
 import { RotateCcw } from "lucide-react";
 
-export default function Results({ stats, duration, script, onRestart }) {
+const Results = ({ stats, duration, script, onRestart }) => {
   return (
     <div className="w-full flex flex-col items-center gap-8 py-10 animate-fadeIn">
       <div className="flex items-end gap-16">
@@ -48,3 +47,5 @@ export default function Results({ stats, duration, script, onRestart }) {
     </div>
   );
 }
+
+export default Results;

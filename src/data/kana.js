@@ -1,5 +1,3 @@
-// [hiragana, romaji] pairs. Katakana is derived from hiragana via a fixed
-// unicode offset (+0x60), so we only need to maintain one table.
 export const KANA_UNITS = [
   ["あ", "a"], ["い", "i"], ["う", "u"], ["え", "e"], ["お", "o"],
   ["か", "ka"], ["き", "ki"], ["く", "ku"], ["け", "ke"], ["こ", "ko"],

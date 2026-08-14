@@ -1,10 +1,9 @@
-import React from "react";
 import { Timer } from "lucide-react";
 import { DURATIONS } from "../hooks/useTypingTest.js";
 
 const SCRIPTS = ["hiragana", "katakana", "mixed"];
 
-export default function ConfigBar({ script, duration, onScriptChange, onDurationChange }) {
+const ConfigBar = ({ script, duration, onScriptChange, onDurationChange }) => {
   return (
     <div className="flex flex-wrap items-center justify-center gap-6 rounded-lg px-6 py-3 mb-12 text-sm bg-bgSub">
       <div className="flex items-center gap-2">
@@ -52,3 +51,5 @@ export default function ConfigBar({ script, duration, onScriptChange, onDuration
     </div>
   );
 }
+
+export default ConfigBar;

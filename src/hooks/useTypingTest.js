@@ -32,7 +32,6 @@ export function useTypingTest() {
     setTestFinished(false);
     setTimeLeft(nextDuration * 60);
     requestAnimationFrame(() => inputRef.current?.focus());
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [duration, script]);
 
   const changeDuration = (n) => {
@@ -56,6 +55,7 @@ export function useTypingTest() {
   useEffect(() => {
     if (!testActive) return;
     if (timeLeft <= 0) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       finishTest();
       return;
     }

@@ -1,6 +1,4 @@
-import React from "react";
-
-export default function HiddenInput({ inputRef, value, onChange, disabled }) {
+const HiddenInput = ({ inputRef, value, onChange, disabled }) => {
   return (
     <input
       ref={inputRef}
@@ -16,3 +14,5 @@ export default function HiddenInput({ inputRef, value, onChange, disabled }) {
     />
   );
 }
+
+export default HiddenInput;

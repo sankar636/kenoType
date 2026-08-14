@@ -1,6 +1,5 @@
-import React from "react";
 
-export default function LiveTimer({ timeLeft }) {
+const  LiveTimer = ({ timeLeft }) => {
   const mm = Math.floor(timeLeft / 60);
   const ss = String(timeLeft % 60).padStart(2, "0");
   return (
@@ -9,3 +8,5 @@ export default function LiveTimer({ timeLeft }) {
     </div>
   );
 }
+
+export default LiveTimer;

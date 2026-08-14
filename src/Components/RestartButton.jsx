@@ -1,7 +1,6 @@
-import React from "react";
 import { RotateCcw } from "lucide-react";
 
-export default function RestartButton({ onRestart }) {
+const RestartButton = ({ onRestart }) => {
   return (
     <button
       onClick={(e) => {
@@ -15,3 +14,5 @@ export default function RestartButton({ onRestart }) {
     </button>
   );
 }
+
+export default RestartButton;
