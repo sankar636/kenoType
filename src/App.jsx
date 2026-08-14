@@ -3,13 +3,13 @@ import './App.css';
 import { ChevronRight } from 'lucide-react';
 import { useTypingTest } from './hooks/useTypingTest.js';
 
-import Header from './components/Header.jsx';
-import ConfigBar from './components/ConfigBar.jsx';
-import LiveTimer from './components/LiveTimer.jsx';
-import WordsDisplay from './components/WordsDisplay.jsx';
-import Results from './components/Results.jsx';
-import HiddenInput from './components/HiddenInput.jsx';
-import RestartButton from './components/RestartButton.jsx';
+import Header from './Components/Header.jsx'
+import ConfigBar from './Components/ConfigBar.jsx';
+import LiveTimer from './Components/LiveTimer.jsx'
+import WordsDisplay from './Components/WordsDisplay.jsx'
+import Results from './Components/Results.jsx';
+import HiddenInput from './Components/HiddenInput.jsx';
+import RestartButton from './Components/RestartButton.jsx';
 
 function App() {
   const {
